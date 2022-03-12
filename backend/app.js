@@ -17,7 +17,6 @@ import { corsOptions } from './src/middlewares/cors.js';
 
 dotenv.config();
 
-console.log('hello world');
 const { PORT = 3000 } = process.env;
 const { connect } = mongoose;
 const app = express();
