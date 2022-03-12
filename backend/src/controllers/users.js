@@ -57,7 +57,7 @@ const createUser = async (req, res, next) => {
         return User.create({ name, about, avatar, password: hash, email });
       })
       .then(() => {
-        res.status(200).send({ data: { name, about, avatar, email } });
+        res.status(201).send({ data: { name, about, avatar, email } });
       });
     return;
   } catch (error) {
